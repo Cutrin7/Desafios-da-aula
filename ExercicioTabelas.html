@@ -7,6 +7,29 @@
     <title>Tabelas & CSS</title>
 
     <style>
+        
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        thead{
+            background-color: black;
+            color: white;
+        }
+
+        table tbody tr:nth-child(2n){
+            background-color: #f2f2f2;      
+        }
+
+        table, td, tr, th{
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 2vh;
+        }
+        
         /*
 
         1. Faça com que a tabela ocupe 100% da largura da tela.
@@ -16,6 +39,7 @@
         4. Aplique a propriedade padding com o valor 2vh para que haja um espaçamento interno entre o conteúdo das células e as bordas das células.
         5. Aplique a propriedade text-align para que o texto das células seja centralizado.
         6. Aplique a propriedade background-color e a propriedade color para que o cabeçalho da tabela tenha um fundo preto e o texto branco.
+
         7. Aplique a propriedade background-color com o valor #f2f2f2 para que as linhas PARES da tabela tenham um fundo cinza.
         8. Aplique a propriedade font-size com o valor 20px para que o texto das células tenha um tamanho de 20 pixels.
         9. Aplique a propriedade font-family com o valor 'Arial', sans-serif para que o texto das células seja exibido em uma fonte Arial.

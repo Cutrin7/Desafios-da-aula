@@ -6,6 +6,7 @@
     <title>Flex & Responsividade</title>
     <style>
 
+
         /*
       
             1. Aplique display flex a tag <body> da página, e assim, faça com que as caixas sejam exibidas em linha e que o espaçamento entre elas seja distribuído de forma igual. 
@@ -36,6 +37,12 @@
             
         */
 
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .box {
             background: #335599;
             width: 200px;
@@ -45,8 +52,41 @@
             justify-content: center;
             align-items: center;
             font-size: 20px;
+            min-height: 20vh;
+            min-width: 20vw;
+            transition: all 0.5s;     
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
         }
 
+        .box:hover{
+            transform: scale(1.1);
+            border-radius: 10%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        @media screen and (max-width: 768px)
+            
+            
+         
+            
+        
     </style>
 </head>
 <body>
